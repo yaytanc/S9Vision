@@ -1,0 +1,297 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    background: url("../img/defaultbg.gif");
+    cursor: none;
+}
+
+div {
+    overflow: hidden;
+    /*border:5px dashed green;*/
+}
+
+video {
+    object-fit:inherit;
+}
+
+#teknik  {
+    position: fixed;
+    left: 25px; /* <-- Reset the default left value */
+    right: auto;
+    z-index: 10000;
+}
+
+.clockBlink {
+    font-family: "Lucida Console", "Courier New";
+}
+
+._dsid_ {
+    position: absolute;
+    z-index:999;
+    right: 15px;
+    bottom: 25px;
+    font-size: 32px;
+    font-weight:bold;
+    border: 0;
+    margin: 0;
+    -webkit-text-stroke: 1px black;
+    color: white;
+    text-shadow: 3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.__blackPanel__ {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    z-index: 998;
+    overflow: hidden;
+}
+
+.firsSetupError {
+    position: absolute;;
+    left: 20%;
+    top: 50%;
+    border: 5px solid black;
+    color: black;
+    background-color: red;
+    font-size: 32px;
+    padding: 12px;
+    width: 50%;
+}
+
+.disconnected {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    z-index: 10000;
+}
+
+.configError {
+    position: absolute;;
+    border: 0;
+    color: white;
+    background-color: red;
+    font-size: 24px;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    top: 30%;
+    z-index: 997;
+    text-align: center;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    cursor: hand;
+
+}
+
+.Stage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.loading {
+    position: absolute;
+    z-index: 999;
+    bottom: 0;
+    color: #000;
+    background-color: #FFF;
+    border-top: 2px solid #000;
+    padding: 12px;
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0px 0px 25px 5px #000;
+
+}
+
+.loading IMG {
+    float: left;
+    margin-right: 10px;
+}
+
+
+.loading .__scene {
+    margin-left: 32%;
+    height: 64px;
+    padding: 16px;
+    float:left;
+    position: relative;
+    width: 150px;
+}
+
+.loading .__scene .__sceneProcess {
+    position:absolute;
+    left: 60px;
+}
+
+.loading .__download {
+    margin-left: 25px;
+    height: 64px;
+    padding: 16px;
+    float:left;
+    position: relative;
+    width: 250px;
+}
+
+.loading .__download .__downloadProcess {
+    position:absolute;
+    left: 60px;
+}
+
+.showSceneId {
+    z-index: 9000;
+    position: inherit;
+    border: 1px solid black;
+    background-color: yellow;
+    color: black;
+    font-size: 12px;
+    padding: 4px;
+    margin: 4px;
+    left: 0;
+    top: 0;
+}
+
+.YAYINYOK {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 9000;
+}
+
+.YAYINYOK div {
+    font-size: 18px;
+    color: #666;
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+}
+
+#kunye {
+    position: absolute;
+    text-align: center;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 3px;
+    background-color: #ff6a00;
+    color: #000;
+    font-size: 14px;
+    border-bottom: 1px solid black;
+}
+
+.showAWebsiteInTheFrame {
+    position: absolute;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    font-family: arial, helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: black;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.showAWebsiteInTheFrame IFRAME {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    margin: 0;
+    overflow: auto;
+}
+
+.showAWebsiteInTheFrame .titleBar {
+    position:relative;
+    background-color: #000033;
+    font-family: arial, helvetica, sans-serif;
+    color: white;
+    box-shadow:         0px 3px 5px rgba(10, 10, 10, 1.0);
+    z-index: 9999;
+    font-weight: normal;
+}
+
+.showAWebsiteInTheFrame IMG {
+    position: absolute;
+    right: 5px;
+    top: 8px;
+}
+
+.btnClose {
+    cursor: hand;
+}
+
+/* CURTAIN */
+/* CURTAIN */
+/* CURTAIN */
+.curtains {
+    position: absolute;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.leftcurtain {
+    width: 51%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 200;
+}
+
+.rightcurtain {
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    position: absolute;
+    z-index: 300;
+}
+
+.rightcurtain img, .leftcurtain img {
+    width: 100%;
+    height: 100%;
+}
+
+#downloadingBar {
+    float:right;
+    padding: 0;
+    margin: 10px 15px 0 0;
+    font-size: 24px;
+    color: #660066;
+    text-align: right;
+    line-height: 20px;
+}
+
+#downloadingBar .db1 {
+    color: black;
+    font-size: 12px;
+}
+
+#downloadingBar .db2 {
+    font-size: 14px;
+    color: #005686;
+}
